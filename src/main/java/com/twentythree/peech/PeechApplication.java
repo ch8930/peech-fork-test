@@ -11,5 +11,4 @@ public class PeechApplication {
     public static void main(String[] args) {
         SpringApplication.run(PeechApplication.class, args);
     }
-
 }

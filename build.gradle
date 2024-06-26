@@ -49,9 +49,12 @@ dependencies {
     //spring-data-jpa
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
-    //
+    //lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.9'
 }
 
 tasks.named('test') {
