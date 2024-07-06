@@ -1,8 +1,8 @@
-package com.twentythree.peech.stt.controller;
+package com.twentythree.peech.script.stt.controller;
 
-import com.twentythree.peech.stt.dto.request.STTRequestDto;
-import com.twentythree.peech.stt.dto.response.ClovaResponseDto;
-import com.twentythree.peech.stt.dto.response.STTResultResponseDto;
+import com.twentythree.peech.script.stt.dto.response.ClovaResponseDto;
+import com.twentythree.peech.script.stt.dto.request.STTRequestDto;
+import com.twentythree.peech.script.stt.dto.response.STTResultResponseDto;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

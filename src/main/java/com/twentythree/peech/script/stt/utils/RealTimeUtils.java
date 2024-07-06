@@ -1,4 +1,4 @@
-package com.twentythree.peech.stt.utils;
+package com.twentythree.peech.script.stt.utils;
 
 import java.time.LocalTime;
 

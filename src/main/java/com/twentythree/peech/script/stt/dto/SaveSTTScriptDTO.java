@@ -1,4 +1,4 @@
-package com.twentythree.peech.stt.dto;
+package com.twentythree.peech.script.stt.dto;
 
 import com.twentythree.peech.script.domain.ScriptEntity;
 

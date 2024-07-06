@@ -1,12 +1,11 @@
 package com.twentythree.peech;
 
-import com.twentythree.peech.stt.dto.request.STTRequestDto;
-import com.twentythree.peech.stt.dto.response.ClovaResponseDto;
-import com.twentythree.peech.stt.service.STTService;
+import com.twentythree.peech.script.stt.dto.request.STTRequestDto;
+import com.twentythree.peech.script.stt.dto.response.ClovaResponseDto;
+import com.twentythree.peech.script.stt.service.STTService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.ResponseEntity;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
 import reactor.core.publisher.Mono;

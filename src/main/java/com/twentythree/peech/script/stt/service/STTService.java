@@ -1,10 +1,10 @@
-package com.twentythree.peech.stt.service;
+package com.twentythree.peech.script.stt.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.twentythree.peech.script.respository.ScriptRepository;
 import com.twentythree.peech.script.respository.SentenceRepository;
-import com.twentythree.peech.stt.dto.request.STTRequestDto;
-import com.twentythree.peech.stt.dto.response.ClovaResponseDto;
+import com.twentythree.peech.script.stt.dto.response.ClovaResponseDto;
+import com.twentythree.peech.script.stt.dto.request.STTRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;

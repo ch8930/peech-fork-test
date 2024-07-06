@@ -1,7 +1,7 @@
-package com.twentythree.peech.stt.service;
+package com.twentythree.peech.script.stt.service;
 
-import com.twentythree.peech.stt.dto.response.STTSentenceDto;
-import com.twentythree.peech.stt.dto.response.ClovaResponseDto;
+import com.twentythree.peech.script.stt.dto.response.STTSentenceDto;
+import com.twentythree.peech.script.stt.dto.response.ClovaResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

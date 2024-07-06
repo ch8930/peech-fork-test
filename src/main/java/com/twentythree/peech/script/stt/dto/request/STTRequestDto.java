@@ -1,4 +1,4 @@
-package com.twentythree.peech.stt.dto.request;
+package com.twentythree.peech.script.stt.dto.request;
 
 import org.springframework.web.multipart.MultipartFile;
 

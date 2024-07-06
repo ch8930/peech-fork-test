@@ -1,10 +1,10 @@
-package com.twentythree.peech.stt.service;
+package com.twentythree.peech.script.stt.service;
 
-import com.twentythree.peech.stt.dto.response.STTSentenceDto;
-import com.twentythree.peech.stt.dto.response.ClovaResponseDto;
-import com.twentythree.peech.stt.dto.response.ParagraphDivideResponseDto;
-import com.twentythree.peech.stt.dto.response.STTResultResponseDto;
-import com.twentythree.peech.stt.utils.RealTimeUtils;
+import com.twentythree.peech.script.stt.dto.response.STTSentenceDto;
+import com.twentythree.peech.script.stt.dto.response.ClovaResponseDto;
+import com.twentythree.peech.script.stt.dto.response.ParagraphDivideResponseDto;
+import com.twentythree.peech.script.stt.dto.response.STTResultResponseDto;
+import com.twentythree.peech.script.stt.utils.RealTimeUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;

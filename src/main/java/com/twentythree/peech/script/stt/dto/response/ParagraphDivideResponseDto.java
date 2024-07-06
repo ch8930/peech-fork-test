@@ -1,4 +1,4 @@
-package com.twentythree.peech.stt.dto.response;
+package com.twentythree.peech.script.stt.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
