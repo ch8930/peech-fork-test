@@ -33,9 +33,15 @@ spring:
       max-request-size: 2GB
 
 clova:
-  api:
+  speech-api:
     secret: ${CLOVA_SPEECH_SECRET_KEY}
     url: ${CLOVA_SPEECH_URL}
+    callback: ${CLOVA_SPEECH_CALLBACK_URL}
+
+  divide-sentence-api:
+    key: ${CLOVASTUDIO_API_KEY}
+    gw-key: ${CLOVASTUDIO_APIGW_API_KEY}
+    url: ${CLOVASTUDIO_API_URL}
 
 gpt:
   model: gpt-3.5-turbo

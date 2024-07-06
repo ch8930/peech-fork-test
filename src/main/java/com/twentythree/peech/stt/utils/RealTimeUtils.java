@@ -1,4 +1,4 @@
-package com.twentythree.peech.utils;
+package com.twentythree.peech.stt.utils;
 
 import java.time.LocalTime;
 
@@ -18,5 +18,9 @@ public class RealTimeUtils {
     public static LocalTime getSentenceRealTime(int start, int end) {
         int realTime = (end - start); // ms to seconds
         return convertMsToTimeFormat(realTime);
+    }
+
+    public static int getRealTimeStamp(int start, int end) {
+        return end - start ;
     }
 }
