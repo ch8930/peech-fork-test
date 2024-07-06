@@ -1,7 +1,7 @@
-package com.twentythree.peech.stt.service;
+package com.twentythree.peech.script.stt.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.twentythree.peech.stt.dto.response.ParagraphDivideResponseDto;
+import com.twentythree.peech.script.stt.dto.response.ParagraphDivideResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;

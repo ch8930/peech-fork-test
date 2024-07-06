@@ -1,6 +1,6 @@
-package com.twentythree.peech.stt.dto.response;
+package com.twentythree.peech.script.stt.dto.response;
 import com.fasterxml.jackson.annotation.*;
-import com.twentythree.peech.stt.utils.RealTimeUtils;
+import com.twentythree.peech.script.stt.utils.RealTimeUtils;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
