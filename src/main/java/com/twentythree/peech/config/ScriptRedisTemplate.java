@@ -1,14 +1,10 @@
-package com.twentythree.peech.script.cache;
+package com.twentythree.peech.config;
 
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import org.springframework.stereotype.Component;
 
-@NoArgsConstructor
-public class RedisTemplateRepository {
+public class ScriptRedisTemplate {
 
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         // RedisTemplate 인스턴스 생성

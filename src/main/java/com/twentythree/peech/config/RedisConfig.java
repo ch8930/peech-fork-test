@@ -1,6 +1,5 @@
 package com.twentythree.peech.config;
 
-import com.twentythree.peech.script.cache.RedisTemplateRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,9 +27,10 @@ public class RedisConfig {
     }
 
     @Bean
-    public RedisTemplate redisTemplate(){
+    public RedisTemplate redisTemplate(RedisConnectionFactory redisConnectionFactory) {
 
-        return new RedisTemplateRepository().redisTemplate(redisConnectionFactory());
+        return new ScriptRedisTemplate().redisTemplate(redisConnectionFactory);
     }
+
 
 }
