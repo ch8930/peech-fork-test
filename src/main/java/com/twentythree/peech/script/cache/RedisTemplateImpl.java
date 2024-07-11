@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Repository
 @RequiredArgsConstructor
@@ -26,11 +25,16 @@ public class RedisTemplateImpl implements CacheService {
     public void saveSentencesIdList(String userKey, List<Long> sentencesIdList){
 
         try{
-            // Long 타입의 SentenceId List를 String 타입으로 변환
+
+            // 만약 해당 sentenceId가 이미 존재한다면 삭제
+            // 현재 방식이 overwrite되는 방식이 아니라서 해당 방식을 적용하고 추가로 수정할 예정
+            if(redisTemplate.hasKey(userKey)){
+                    redisTemplate.delete(userKey);
+            }
             List<String> sentenceIdListLongToString = sentencesIdList.stream().map(String::valueOf).toList();
 
             for(String sentenceId : sentenceIdListLongToString) {
-                redisTemplate.opsForValue().set(userKey, sentenceIdListLongToString);
+                redisTemplate.opsForList().rightPush(userKey, sentenceId);
             }
             log.info("Successfully saved sentenceID List for user: {}", userKey);
         } catch (Exception e) {
@@ -43,6 +47,13 @@ public class RedisTemplateImpl implements CacheService {
     public void saveSentenceInfo(Long sentenceId, RedisSentenceDTO redisSentence){
 
         try {
+
+            // 만약 해당 sentenceId가 이미 존재한다면 삭제
+            // 현재 방식이 overwrite되는 방식이 아니라서 해당 방식을 적용하고 추가로 수정할 예정
+            if(redisTemplate.hasKey(sentenceId.toString())){
+                redisTemplate.delete(sentenceId.toString());
+            }
+
             Map<String, String> sentenceInformations = new HashMap<>();
             sentenceInformations.put("paragraphId", redisSentence.getParagraphId().toString());
             sentenceInformations.put("paragraphOrder", redisSentence.getParagraphOrder().toString());

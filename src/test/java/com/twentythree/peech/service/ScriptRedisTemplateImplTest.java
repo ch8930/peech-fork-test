@@ -28,16 +28,6 @@ public class ScriptRedisTemplateImplTest {
     @Autowired
     private RedisTemplateImpl redisTemplateImpl;
 
-    // 전체 테스트로 돌릴 시 기존의 데이터가 남아있어서 테스트가 꼬일 수 있으므로 데이터 초기화
-    @BeforeAll
-    public void setUp() {
-        // 모든 키를 가져와서 삭제
-        Set<String> keys = redisTemplate.keys("*");
-        if (keys != null) {
-            redisTemplate.delete(keys);
-        }
-    }
-
     @Test
     public void userKey에_해당하는_문장_리스트_저장() throws Exception {
         String userId = "user1";
